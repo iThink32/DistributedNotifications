@@ -33,7 +33,7 @@ You add an observer and its associated callback as so
             guard let unwrappedObserver = observer else{
                 return
             }
-            let instance = Unmanaged<RazorpayCheckoutVC>.fromOpaque(unwrappedObserver).takeUnretainedValue()
+            let instance = Unmanaged<ViewController>.fromOpaque(unwrappedObserver).takeUnretainedValue()
         }
     }
 ```
@@ -47,7 +47,7 @@ Now this part:-
             guard let unwrappedObserver = observer else{
                 return
             }
-            let instance = Unmanaged<RazorpayCheckoutVC>.fromOpaque(unwrappedObserver).takeUnretainedValue()
+            let instance = Unmanaged<ViewController>.fromOpaque(unwrappedObserver).takeUnretainedValue()
 ```
 To understand this well you need to read about how swift manages non ARC pointers or in short UnsafePointers but all i can say
 now is this is a C function and it does not capture self so you cannot call anything related to self.

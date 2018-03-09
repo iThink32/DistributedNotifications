@@ -48,9 +48,11 @@ Now this part:-
                 return
             }
             let instance = Unmanaged<ViewController>.fromOpaque(unwrappedObserver).takeUnretainedValue()
+            instance.anyInstanceMethod() // anyInstanceMethod is any method of the class ViewController or ideally
+            observer added.
 ```
 To understand this well you need to read about how swift manages non ARC pointers or in short UnsafePointers but all i can say
-now is this is a C function and it does not capture self so you cannot call anything related to self.
+now is this is a funcation that returns a C callBack which does not capture self so you cannot call anything related to self.
 To fix this we cast self as an UnsafeRawPointer and add it as an observer and in the callback recast it back to our
 ViewController.
 

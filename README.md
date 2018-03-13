@@ -62,7 +62,7 @@ Complex? This is nothing in front of the hell ive been through to put forward th
 
 So in short do the above and your callback will be called.
 
-####NOTE:- VERY VERY IMP
+#### NOTE:- VERY VERY IMP
 
 In the case of these notifications i.e Darwin the userInfo , object and deliverImmediately is ignored by iOS that means 
 YOU CANNOT SEND DATA VIA THESE NOTIFICATIONS.

@@ -1,9 +1,7 @@
 //
 //  DistributedNotificationsObserver.swift
-//  CheckoutOtpelf
 //
 //  Created by N.A Shashank on 08/03/18.
-//  Copyright © 2018 Abhinav. All rights reserved.
 //
 
 import UIKit

@@ -3,6 +3,8 @@
 
 ### This method is used for communication between different processes or applications , do not use it for local communication !
 
+### this readme follows the client server architecture if you want bi-directional communication please use DarwinNotificationCenter and look at TwoWayCommunication.md for how to.
+
 #### Usage:-
 First identify which class is your server and which class is your listener.
 

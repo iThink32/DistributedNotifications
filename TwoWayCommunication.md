@@ -21,10 +21,9 @@ after this you can use your respective selectors to perform whatever you want to
 To post a Notication it is very simple 
 
 ```
-DistributedNotificationCenter.postNotification(name: TestNotificationConstants.skipOneTimePassword.stringValue())
+DistributedNotificationCenter.postNotification(name: "name1")
 ```
 
 but remember when you post a notification the class that has to receive it must register and listen to it as mentioned above.
 
-###Darwin notifications cannot be used with a user-info dict it is automatically ignored by iOS.It is strictly meant for
-  notifications.
+### Darwin notifications cannot be used with a user-info dict it is automatically ignored by iOS.It is strictly meant for     notifications.

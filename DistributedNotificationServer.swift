@@ -1,9 +1,7 @@
 //
 //  ServerMachPort.swift
-//  SampleAppCheckout
 //
 //  Created by N.A Shashank on 06/03/18.
-//  Copyright © 2018 Abhinav. All rights reserved.
 //
 
 import Foundation

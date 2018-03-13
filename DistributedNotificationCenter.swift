@@ -1,6 +1,5 @@
 //
 //  DistributedNotificationsObserver.swift
-//  CheckoutOtpelf
 //
 //  Created by N.A Shashank on 08/03/18.
 //

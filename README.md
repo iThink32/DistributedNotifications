@@ -10,12 +10,12 @@ First identify which class is your server and which class is your listener.
 
 Setup your server like so:-
 
-```
+```swift
 var server = DistributedNotificationServer()
 ```
 and then post a notification whereever required like 
 
-```
+```swiftswift
 self.server.postNotification(name: TestNotificationConstants.paymentScreenViewed.stringValue())
 ```
 
@@ -23,7 +23,7 @@ Now client side is a little complex
 
 You add an observer and its associated callback as so
 
-```
+```swift
     func addObservers() {
             DistributedNotificationObserver.addObserver(name: TestNotificationConstants.paymentScreenViewed.stringValue(),
                observer: self, callBack: self.paymentScreenViewed())
@@ -45,7 +45,7 @@ that returns a CFNotificationCallBack, thats why there is another function calle
 passed.
 
 Now this part:-
-```
+```swift
             guard let unwrappedObserver = observer else{
                 return
             }

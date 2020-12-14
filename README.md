@@ -1,9 +1,12 @@
 # DistributedNotifications
-## A Repo that lets you post notifications across multiple applications or processes on the same device
+### Note:
+A Repo that lets you post notifications across multiple applications or processes on the same device
 
-### This method is used for communication between different processes or applications , do not use it for local communication !
+### Note:
+This method is used for communication between different processes or applications , do not use it for local communication !
 
-### this readme follows the client server architecture if you want bi-directional communication please use DarwinNotificationCenter and look at TwoWayCommunication.md for how to.
+### Note:
+this readme follows the client server architecture if you want bi-directional communication please use DarwinNotificationCenter and look at TwoWayCommunication.md for how to.
 
 #### Usage:-
 First identify which class is your server and which class is your listener.
@@ -65,7 +68,7 @@ So in short do the above and your callback will be called.
 #### NOTE:- VERY VERY IMP
 
 In the case of these notifications i.e Darwin the userInfo , object and deliverImmediately is ignored by iOS that means 
-YOU CANNOT SEND DATA VIA THESE NOTIFICATIONS.
+`YOU CANNOT SEND DATA VIA THESE NOTIFICATIONS.`
 
 check this link for reference :-
 https://developer.apple.com/documentation/corefoundation/1542592-cfnotificationcenterpostnotifica?language=objc 
